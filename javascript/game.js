@@ -12,7 +12,7 @@ var counter = 0;
 
   // This randomizes each number to be from 1-12.
 
-  var numberOptions = [(Math.floor((Math.random()*12))), (Math.floor((Math.random()*12))), (Math.floor((Math.random()*12))), (Math.floor((Math.random()*12)))];
+  var numberOptions = [(Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1)];
 
 
 for (var i = 0; i < numberOptions.length; i++) {
@@ -36,7 +36,7 @@ function reset () {
   
   $("#number-to-guess").text(targetNumber);
 
-  window ['numberOptions'] = [(Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1)];
+  window ['numberOptions'] = [(Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12)))];
   
   counter = 0;
   

@@ -1,18 +1,25 @@
 .crystal-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 
 body{
     background-image: url(../images/shattered.png);
+    font-family: 'Forum', cursive;
+    font-size: 25px;
+    text-align: center;
     
 }
 
 #crystals {
-    margin-left: 40px;;
+    margin-left: 20px;
     margin-right: 20px; 
     margin-top: auto;
     margin-bottom: auto;
+}
+
+#crystalsdiv{
+  width: 800px;
 }
 
 h1{
@@ -26,4 +33,16 @@ h1{
     font-size: 25px;
     width: 800px;
     margin: 0 auto;
+}
+
+.scores {
+    background-image: url(../images/crystal-background.jpeg);
+    width: 200px;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+}
+p {
+    padding: 5px;
 }
