@@ -1,4 +1,29 @@
 .crystal-image {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
+
+body{
+    background-image: url(../images/shattered.png);
+    
+}
+
+#crystals {
+    margin-left: 40px;;
+    margin-right: 20px; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;   
+}
+
+.gamestart {
+    text-align: center;
+    font-size: 25px;
+    width: 800px;
+    margin: 0 auto;
+}

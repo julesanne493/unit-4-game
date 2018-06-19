@@ -10,7 +10,9 @@ var counter = 0;
 
   $("#number-to-guess").text(targetNumber);
 
-  var numberOptions = [(Math.floor((Math.random()*10))+1), (Math.floor((Math.random()*5))+1), (Math.floor((Math.random()*3))+1), (Math.floor((Math.random()*7))+1)];
+  // This randomizes each number to be from 1-12.
+
+  var numberOptions = [(Math.floor((Math.random()*12))), (Math.floor((Math.random()*12))), (Math.floor((Math.random()*12))), (Math.floor((Math.random()*12)))];
 
 
 for (var i = 0; i < numberOptions.length; i++) {
@@ -34,7 +36,7 @@ function reset () {
   
   $("#number-to-guess").text(targetNumber);
 
-  window ['numberOptions'] = [(Math.floor((Math.random()*10)+1)), (Math.floor((Math.random()*5)+1)), (Math.floor((Math.random()*3))+1), (Math.floor((Math.random()*7)+1))];
+  window ['numberOptions'] = [(Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1), (Math.floor((Math.random()*12))+1)];
   
   counter = 0;
   
@@ -65,9 +67,9 @@ function reset () {
 
     $("#score").html(counter);
 
-    $("#wins").html("Wins: " + wins);
+    $("#wins").html(wins);
 
-    $("#losses").html("Losses: " + losses);
+    $("#losses").html(losses);
 
   });
 

@@ -5,10 +5,7 @@
 
   <style type="text/css">
 
-    .crystal-image {
-      width: 300px;
-      height: 300px;
-    }
+
   </style>
 
   <link rel="stylesheet" href="css/reset.css">
@@ -19,7 +16,17 @@
 
 </head>
 <body>
- 
+ <div class="gamestart">
+  <h1>
+    Hidden Crystals Game!
+  </h1>
+
+   <p>Each of the crystals below has a hidden value. Click a crystal to add to your score. When your score matches the Number to Guess, you win! </p>
+    
+    <p>Be careful, though - if you go over the Number to Guess you lose. The Number to Guess and the values of the crystals reset at the start of each game. Good luck! </p>
+
+
+ </div>
 
 
   <h1>Number to Guess: <span id="number-to-guess"></span></h1>
@@ -31,11 +38,10 @@
     <p> Score: <span id="score"></span></p>
   </div>
 
-  <div id="wins">
+  <div>Wins: <span id="wins"></span>
   </div>
-<br>
-  <div id="losses">
-  </div>
+<div>Losses: <span id="losses"></span>
+</div>
 
   <script src="javascript/game.js">
   </script>
